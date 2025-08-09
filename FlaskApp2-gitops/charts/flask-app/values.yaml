@@ -1,0 +1,19 @@
+replicaCount: 1
+
+image:
+  repository: archi1912/app-container   # <- REPLACE with your image
+  tag: "latest"                                # update tag to demo redeploys
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 5000
+
+postgres:
+  host: "postgres.db.svc.cluster.local"  # default target (namespace=db)
+  user: "postgres"
+  password: "postgres"
+  dbname: "mydb"
+
+redis:
+  host: "redis.redis.svc.cluster.local"  # default target (namespace=redis)
