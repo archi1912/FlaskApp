@@ -1,5 +1,5 @@
 apiVersion: v2
-name: flask-app
+name: flask-app-2
 description: Helm chart for the FlaskApp
 type: application
 version: 0.1.0
