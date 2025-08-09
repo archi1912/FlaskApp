@@ -17,3 +17,5 @@ postgres:
 
 redis:
   host: "redis.redis.svc.cluster.local"  # default target (namespace=redis)
+
+
